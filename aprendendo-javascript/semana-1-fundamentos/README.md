@@ -11,9 +11,13 @@ Esta semana foca nos conceitos básicos de JavaScript: variáveis, tipos de dado
 - Objetivo: armazenar informações em variáveis e exibir no console.
 - [Código](./dia1.js)
 
-### Dia 2 - Calculadora de Área do Retângulo
+### Exercício Dia 2 - Cálculo do IMC
 
-- Objetivo: calcular área usando variáveis e operadores.
+Objetivo:
+
+- Praticar operações matemáticas no JavaScript.
+- Trabalhar com variáveis numéricas e expressões aritméticas.
+- Utilizar `toFixed()` para formatar resultados.
 - [Código](./dia2.js)
 
 ### Dia 3 - Gerador de Mensagens

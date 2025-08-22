@@ -11,18 +11,14 @@ Esta semana foca nos conceitos básicos de JavaScript: variáveis, tipos de dado
 - Objetivo: armazenar informações em variáveis e exibir no console.
 - [Código](./dia1.js)
 
-### Exercício Dia 2 - Cálculo do IMC
+### Dia 2 - Cálculo do IMC
 
-Objetivo:
-
-- Praticar operações matemáticas no JavaScript.
-- Trabalhar com variáveis numéricas e expressões aritméticas.
-- Utilizar `toFixed()` para formatar resultados.
+- Objetivo: praticar operações matemáticas no JavaScript.
 - [Código](./dia2.js)
 
 ### Dia 3 - Gerador de Mensagens
 
-- Objetivo: criar mensagens usando strings e template literals.
+- Objetivo: criar mensagens dinâmicas usando strings e template literals.
 - [Código](./dia3.js)
 
 ### Dia 4 - Conversor de Temperatura

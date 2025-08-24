@@ -1,0 +1,32 @@
+h1 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.btn01 {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn01:hover {
+  background-color: #45a049;
+}
+
+.btn02 {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #534caf;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn02:hover {
+  background-color: #5945a0;
+}

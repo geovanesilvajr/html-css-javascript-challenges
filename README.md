@@ -19,7 +19,7 @@ Cada dia possui sua própria pasta (`dia-1`, `dia-2`, etc.) com:
 
 ## ✅ Semana 1 – Exercícios
 
-- [Dia 1 – Botão com alerta](./dia-1/README.md)
+- [Dia 1 – Botão com alerta](./frontend-practice/semana-1/dia-1/README.md)
 - [Dia 2 – Formulário com input + console](./dia-2/README.md)
 - [Dia 3 – Lista dinâmica](./dia-3/README.md)
 - [Dia 4 – Imagem interativa](./dia-4/README.md)

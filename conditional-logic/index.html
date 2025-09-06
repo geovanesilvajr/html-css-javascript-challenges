@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>App Avaliação</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+        background: #f0f2f5;
+      }
+      .app {
+        background: #fff;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        width: 300px;
+      }
+      input,
+      button {
+        padding: 10px;
+        margin: 5px 0;
+        width: 100%;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+      }
+      button {
+        background: #2196f3;
+        color: #fff;
+        cursor: pointer;
+        font-weight: bold;
+      }
+      button:hover {
+        background: #1976d2;
+      }
+      p {
+        margin-top: 10px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="app">
+      <h2>⭐ Avaliação do App</h2>
+      <input type="number" id="nota" placeholder="Digite sua nota (0 a 5)" />
+      <button onclick="avaliar()">Enviar Avaliação</button>
+      <p id="resultado"></p>
+    </div>
+
+    <script>
+      function avaliar() {
+        const nota = Number(document.getElementById("nota").value);
+        const resultado = document.getElementById("resultado");
+
+        if (nota === 5) {
+          resultado.textContent = "🤩 Excelente!";
+          resultado.style.color = "green";
+        } else if (nota >= 3 && nota <= 4) {
+          resultado.textContent = "🙂 Bom, mas pode melhorar";
+          resultado.style.color = "orange";
+        } else if (nota <= 2) {
+          resultado.textContent = "😞 Experiência ruim";
+          resultado.style.color = "red";
+        } else {
+          resultado.textContent = "⚠️ Digite uma nota válida entre 0 e 5.";
+          resultado.style.color = "gray";
+        }
+      }
+    </script>
+  </body>
+</html>

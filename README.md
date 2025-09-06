@@ -1,32 +1,11 @@
-# 🚀 Frontend Practice
+# 🚀 JavaScript Challenges
 
-Este repositório contém meus exercícios diários de **HTML, CSS e JavaScript**.  
-O objetivo é praticar conceitos básicos e intermediários, evoluindo a cada semana com pequenos projetos.
-
-📅 **Semana 1 – Bloco 1 (HTML + CSS + JavaScript)**  
-Tempo de estudo: **30 min/dia**
+Repositório com pequenos desafios de **HTML, CSS e JavaScript** organizados em arquivos únicos (inline).  
+O objetivo é praticar **JS + lógica de programação** com foco em **desenvolvimento mobile/web**.
 
 ---
 
-## 📂 Estrutura
+## 📂 Índice de Desafios
 
-Cada dia possui sua própria pasta (`dia-1`, `dia-2`, etc.) com:
-
-- Arquivos do exercício (`index.html`, `style.css`, `script.js`)
-- Um `README.md` curto descrevendo o que foi feito
-
----
-
-## ✅ Semana 1 – Exercícios
-
-- [Dia 1 – Botão com alerta](./frontend-practice/semana-1/dia-1/README.md)
-- - [Dia 2 – Formulário com console](./frontend-practice/semana-1/dia-2/README.md)
-- [Dia 3 – Lista dinâmica](./dia-3/README.md)
-- [Dia 4 – Imagem interativa](./dia-4/README.md)
-- [Dia 5 – Tabela dinâmica](./dia-5/README.md)
-- [Dia 6 – Mini calculadora](./dia-6/README.md)
-- [Dia 7 – Projeto: To-Do List](./dia-7/README.md)
-
----
-
-📌 Cada semana terá sua própria lista de exercícios, sempre organizada em blocos de estudo.
+- [Conditional Logic](./conditional-logic/index.html) — Exibe mensagens diferentes conforme a nota dada ao app (0 a 5).
+- [Validation & Simplification](./validation-simplification/index.html) — Retorna mensagens de acordo com a temperatura informada.

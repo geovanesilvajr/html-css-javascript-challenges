@@ -1,0 +1,94 @@
+<!-- 
+Desafio 2.0 — App Clima
+Funcionalidade: Usuário digita a temperatura atual em °C, e o app retorna:
+Menor que 0 → "❄️ Muito frio" (azul)
+Entre 0 e 20 → "🧥 Frio moderado" (cinza)
+Entre 21 e 30 → "🌤️ Clima agradável" (laranja)
+Maior que 30 → "🔥 Muito quente" (vermelho)
+Valores inválidos (não número ou fora de um range aceitável, tipo -100 ou 200) → "⚠️ Digite uma temperatura válida" (preto)
+👉 A ideia é você validar primeiro (isNaN, valores muito extremos) e depois simplificar as condições.
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>App Clima</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+        background: #e3f2fd;
+      }
+      .app {
+        background: #fff;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        width: 300px;
+      }
+      input,
+      button {
+        padding: 10px;
+        margin: 5px 0;
+        width: 100%;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+      }
+      button {
+        background: #03a9f4;
+        color: #fff;
+        cursor: pointer;
+        font-weight: bold;
+      }
+      button:hover {
+        background: #0288d1;
+      }
+      p {
+        margin-top: 10px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="app">
+      <h2>🌡️ Verificar Clima</h2>
+      <input
+        type="number"
+        id="temperatura"
+        placeholder="Digite a temperatura em °C"
+      />
+      <button onclick="verificarClima()">Verificar</button>
+      <p id="resultado"></p>
+    </div>
+
+    <script>
+      function verificarClima() {
+        const temperatura = Number(
+          document.getElementById("temperatura").value
+        );
+        const resultado = document.getElementById("resultado");
+
+        if (isNaN(temperatura) || temperatura < -50 || temperatura > 60) {
+          resultado.textContent = "⚠️ Digite uma temperatura válida";
+          resultado.style.color = "black";
+        } else if (temperatura <= 20) {
+          resultado.textContent = "🧥 Frio moderado";
+          resultado.style.color = "grey";
+        } else if (temperatura <= 30) {
+          resultado.textContent = "🌤️ Clima agradável";
+          resultado.style.color = "orange";
+        } else {
+          resultado.textContent = "🔥 Muito quente";
+          resultado.style.color = "red";
+        }
+      }
+    </script>
+  </body>
+</html>

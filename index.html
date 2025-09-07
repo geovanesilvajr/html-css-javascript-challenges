@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>App de Treino</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+        background: #e3f2fd;
+      }
+      .app {
+        background: #fff;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        width: 320px;
+      }
+      input,
+      button {
+        padding: 10px;
+        margin: 5px 0;
+        width: 100%;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+      }
+      button {
+        background: #2196f3;
+        color: #fff;
+        cursor: pointer;
+        font-weight: bold;
+      }
+      button:hover {
+        background: #1976d2;
+      }
+      #resultado {
+        margin-top: 15px;
+        font-weight: bold;
+        max-height: 200px;
+        overflow-y: auto;
+        border-top: 1px solid #ddd;
+        padding-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="app">
+      <h2>🏋️ Repetições de Exercício</h2>
+      <input
+        type="number"
+        id="reps"
+        placeholder="Digite o número de repetições"
+      />
+      <button onclick="contarReps()">Iniciar</button>
+      <div id="resultado"></div>
+    </div>
+
+    <script>
+      function contarReps() {
+        const reps = Number(document.getElementById("reps").value);
+        const resultado = document.getElementById("resultado");
+
+        resultado.innerHTML = "";
+
+        if (isNaN(reps) || reps <= 0) {
+          resultado.innerHTML =
+            "<p style='color:red;'>⚠️ Digite um número válido maior que 0</p>";
+          return;
+        }
+
+        for (let i = 1; i <= reps; i++) {
+          resultado.innerHTML += i + " 💪 <br>";
+        }
+
+        if (reps > 20) {
+          resultado.innerHTML +=
+            "<p style='color:green;'> 🔥 Você se superou! Excelente treino!</p>";
+        }
+      }
+    </script>
+  </body>
+</html>

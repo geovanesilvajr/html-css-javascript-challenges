@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>App - Calculadora Simples</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background: #eaf7ff;
+      }
+      .card {
+        background: white;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        width: 300px;
+      }
+      input,
+      button {
+        margin: 8px 0;
+        padding: 10px;
+        width: 90%;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+      }
+      button {
+        background: #007bff;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      button:hover {
+        background: #0056b3;
+      }
+      p {
+        font-size: 18px;
+        font-weight: bold;
+        margin-top: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h2>📱 App - Calculadora</h2>
+      <input type="number" id="num1" placeholder="Digite o primeiro número" />
+      <input type="number" id="num2" placeholder="Digite o segundo número" />
+      <button onclick="calcular()">Multiplicar</button>
+      <p id="resultado"></p>
+    </div>
+
+    <script>
+      function calcular() {
+        const num1 = Number(document.getElementById("num1").value);
+        const num2 = Number(document.getElementById("num2").value);
+        const resultado = document.getElementById("resultado");
+
+        if (isNaN(num1) || isNaN(num2)) {
+          resultado.textContent = "Digite um número válido";
+          resultado.style.color = "red";
+          return;
+        }
+
+        resultado.textContent = `Resultado: ${num1 * num2}`;
+        resultado.style.color = "green";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App de Verificação para Dirigir</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background: #f4f4f4;
+      }
+
+      .app {
+        background: white;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        width: 300px;
+      }
+
+      input {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        box-sizing: border-box;
+      }
+
+      button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 8px;
+        background: #28a745;
+        color: white;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background: #1e7e34;
+      }
+
+      #resultado {
+        margin-top: 15px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="app">
+      <h2>🚗 Pode Dirigir?</h2>
+      <input type="number" id="idade" placeholder="Digite sua idade" />
+      <button onclick="verificarDirigir()">Verificar</button>
+      <p id="resultado"></p>
+    </div>
+
+    <script>
+      function verificarDirigir() {
+        const idade = Number(document.getElementById("idade").value);
+        const resultado = document.getElementById("resultado");
+
+        if (isNaN(idade) || idade <= 0) {
+          resultado.textContent = "Digite uma idade válida";
+          resultado.style.color = "grey";
+          return;
+        }
+
+        if (idade >= 18) {
+          resultado.textContent = "Você é maior de idade e pode dirigir";
+          resultado.style.color = "green";
+        } else {
+          resultado.textContent = "Você é menor de idade e não pode dirigir";
+          resultado.style.color = "red";
+        }
+      }
+    </script>
+  </body>
+</html>

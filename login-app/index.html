@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Login App - Exercício</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #eef2f7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      .container {
+        background: white;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        text-align: center;
+        width: 320px;
+      }
+
+      h2 {
+        margin-bottom: 15px;
+        color: #222;
+      }
+
+      input {
+        width: 90%;
+        padding: 10px;
+        margin: 8px 0;
+        border: 1px solid #bbb;
+        border-radius: 6px;
+      }
+
+      button {
+        width: 95%;
+        padding: 10px;
+        border: none;
+        border-radius: 6px;
+        background: #007bff;
+        color: white;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      button:hover {
+        background: #0069d9;
+      }
+
+      p {
+        margin-top: 10px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Login App - Exercício</h2>
+      <input type="text" id="email" placeholder="E-mail" />
+      <input type="password" id="pin" placeholder="PIN de 4 dígitos" />
+      <button onclick="fazerLogin()">Entrar</button>
+      <p id="mensagem"></p>
+    </div>
+
+    <script>
+      function fazerLogin() {
+        const email = document.getElementById("email").value.trim();
+        const pin = document.getElementById("pin").value.trim();
+        const mensagem = document.getElementById("mensagem");
+
+        const emailCorreto = "user@email.com";
+        const pinCorreto = "4321";
+
+        if (email === "" || pin === "") {
+          mensagem.textContent = "Digite um E-mail e Pin válidos.";
+          mensagem.style.color = "grey";
+          return;
+        }
+
+        if (email === emailCorreto && pin === pinCorreto) {
+          mensagem.textContent = "Login bem-sucessido";
+          mensagem.style.color = "green";
+        } else {
+          mensagem.textContent = "Login e Pin incorretos";
+          mensagem.style.color = "red";
+        }
+      }
+    </script>
+  </body>
+</html>

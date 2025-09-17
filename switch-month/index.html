@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dia 7 - App Mês do Ano</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: #f4f4f4;
+        margin: 0;
+      }
+      .container {
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        width: 320px;
+      }
+      input,
+      button {
+        padding: 10px;
+        margin: 10px 0;
+        width: 90%;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
+      button {
+        background: #28a745;
+        color: white;
+        cursor: pointer;
+      }
+      button:hover {
+        background: #1e7e34;
+      }
+      #resultado {
+        margin-top: 15px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>📆 App Mês do Ano</h2>
+      <p>Digite um número (1 a 12):</p>
+      <input type="number" id="numeroMes" placeholder="Ex: 1 para Janeiro" />
+      <button onclick="mostrarMes()">Ver Mês</button>
+      <p id="resultado"></p>
+    </div>
+
+    <script>
+      function mostrarMes() {
+        const numeroMes = Number(document.getElementById("numeroMes").value);
+        const resultado = document.getElementById("resultado");
+        let mesDoAno;
+
+        switch (numeroMes) {
+          case 1:
+            mesDoAno = "Janeiro";
+            break;
+
+          case 2:
+            mesDoAno = "Fevereiro";
+            break;
+
+          case 3:
+            mesDoAno = "Março";
+            break;
+
+          case 4:
+            mesDoAno = "Abril";
+            break;
+          case 5:
+            mesDoAno = "Maio";
+            break;
+          case 6:
+            mesDoAno = "Junho";
+            break;
+          case 7:
+            mesDoAno = "Julho";
+            break;
+          case 8:
+            mesDoAno = "Agosto";
+            break;
+          case 9:
+            mesDoAno = "Setembro";
+            break;
+          case 10:
+            mesDoAno = "Outubro";
+            break;
+          case 11:
+            mesDoAno = "Novembro";
+            break;
+          case 12:
+            mesDoAno = "Dezembro";
+            break;
+
+          default:
+            mesDoAno = "Número inválido. Digite um número entre 1 e 12";
+        }
+        resultado.textContent = mesDoAno;
+        resultado.style.color =
+          numeroMes >= 1 && numeroMes <= 12 ? "green" : "red";
+      }
+    </script>
+  </body>
+</html>

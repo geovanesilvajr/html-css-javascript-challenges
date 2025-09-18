@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Comparações - Nome do App</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: #eef2f7;
+      }
+      .container {
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        width: 300px;
+      }
+      input {
+        margin: 5px 0;
+        padding: 8px;
+        width: 90%;
+      }
+      button {
+        margin-top: 10px;
+        padding: 8px 15px;
+        background: #28a745;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      p {
+        margin-top: 15px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Comparar Apps</h2>
+      <input type="text" id="app1" placeholder="Digite o primeiro app" />
+      <input type="text" id="app2" placeholder="Digite o segundo app" />
+      <button onclick="compararApps()">Comparar</button>
+      <p id="resultado"></p>
+    </div>
+
+    <script>
+      function compararApps() {
+        const app1 = document.getElementById("app1").value.trim();
+        const app2 = document.getElementById("app2").value.trim();
+        const resultado = document.getElementById("resultado");
+
+        let mensagem = "";
+
+        if (app1 == app2) {
+          mensagem += "== : Os aplicativos são iguais. (Tem o mesmo conteúdo)";
+        }
+
+        if (app1 === app2) {
+          mensagem += " === : Os aplicativos e tipos são iguais.";
+        }
+
+        if (app1 != app2) {
+          mensagem += "!= : Os aplicativos são diferentes.";
+        }
+
+        if (app1 !== app2) {
+          mensagem += " !== : Os aplicativos ou tipos são diferentes.";
+        }
+
+        resultado.textContent = mensagem;
+        resultado.style.color = "purple";
+      }
+    </script>
+  </body>
+</html>

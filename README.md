@@ -16,3 +16,4 @@ O objetivo é praticar **JS + lógica de programação** com foco em **desenvolv
 - [Laços de Repetição](./loops-iteration/index.html) — Mostra repetições de exercícios usando `for` e exibe mensagem extra se o número for maior que 20.
 - [Operadores Lógicos - Login Simples](./login-app/index.html) — Verifica e-mail e PIN para autenticar o usuário.
 - [Estrutura Switch - Mês do Ano](./switch-month/index.html) — Retorna o mês do ano a partir do número informado (1 a 12).
+- [Comparações (==, ===, !=, !==)](./comparisons-app/index.html) — Demonstra as diferenças entre igualdade solta e estrita, além de desigualdade.

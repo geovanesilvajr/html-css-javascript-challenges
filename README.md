@@ -17,3 +17,4 @@ O objetivo é praticar **JS + lógica de programação** com foco em **desenvolv
 - [Operadores Lógicos - Login Simples](./login-app/index.html) — Verifica e-mail e PIN para autenticar o usuário.
 - [Estrutura Switch - Mês do Ano](./switch-month/index.html) — Retorna o mês do ano a partir do número informado (1 a 12).
 - [Comparações (==, ===, !=, !==)](./comparisons-app/index.html) — Demonstra as diferenças entre igualdade solta e estrita, além de desigualdade.
+- [Função Simples - Dobro de um Número](./day-09-simple-function/index.html) — Calcula o triplo de um número informado pelo usuário

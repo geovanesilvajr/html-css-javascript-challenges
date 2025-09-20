@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App - IMC Desafio</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #eef2f3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      .container {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 300px;
+        text-align: center;
+      }
+      h1 {
+        font-size: 20px;
+        margin-bottom: 15px;
+      }
+      input {
+        width: 90%;
+        padding: 8px;
+        margin: 8px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      button {
+        background: #2196f3;
+        color: white;
+        border: none;
+        padding: 10px;
+        margin-top: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 100%;
+      }
+      button:hover {
+        background: #1976d2;
+      }
+      p {
+        margin-top: 15px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>App - IMC Desafio</h1>
+      <input type="number" id="peso" placeholder="Digite seu peso (kg)" />
+      <input type="number" id="altura" placeholder="Digite sua altura (m)" />
+      <button onclick="calcularIMC()">Calcular IMC</button>
+      <p id="resultado"></p>
+    </div>
+
+    <script>
+      function calcularIMC() {
+        const peso = parseFloat(document.getElementById("peso").value);
+        const altura = parseFloat(document.getElementById("altura").value);
+        const resultado = document.getElementById("resultado");
+
+        if (isNaN(peso) || isNaN(altura) || altura <= 0 || peso < 0) {
+          resultado.textContent = "Digite o seu peso e sua Altura.";
+          resultado.style.color = "red";
+          return;
+        }
+
+        const imc = (peso / (altura * altura)).toFixed(2);
+
+        let classificacao = "";
+        if (imc < 18.5) classificacao = "Abaixo do peso";
+        else if (imc < 24.9) classificacao = "Peso normal";
+        else if (imc < 29.9) classificacao = "Sobrepeso";
+        else classificacao = "Obesidade";
+
+        resultado.textContent = `Com o peso de: ${peso} kg, e altura de: ${altura} m. Seu IMC é : ${imc} - ${classificacao}`;
+        resultado.style.color = "blue";
+      }
+    </script>
+  </body>
+</html>

@@ -19,3 +19,4 @@ O objetivo é praticar **JS + lógica de programação** com foco em **desenvolv
 - [Comparações (==, ===, !=, !==)](./comparisons-app/index.html) — Demonstra as diferenças entre igualdade solta e estrita, além de desigualdade.
 - [Função Simples - Dobro de um Número](./day-09-simple-function/index.html) — Calcula o triplo de um número informado pelo usuário.
 - [Mini-projeto - Calculadora de IMC](./day-10-imc-calculator/index.html) — Calcula o **IMC** a partir do peso e altura, retornando também a classificação.
+- [For Básico - Contagem de 1 a 10](./day-11-basic-for/index.html) — Exibe a contagem de 1 até 10 utilizando laço `for`.

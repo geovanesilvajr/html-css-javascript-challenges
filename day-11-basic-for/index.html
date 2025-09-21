@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Múltiplos de 5</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #eef2f7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .container {
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 320px;
+      }
+      button {
+        background: #2196f3;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+      button:hover {
+        background: #0b7dda;
+      }
+      p {
+        margin-top: 15px;
+        color: #333;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>App: Múltiplos de 5</h2>
+      <button onclick="mostrarMultiplos()">Mostrar</button>
+      <p id="resultado"></p>
+    </div>
+
+    <script>
+      function mostrarMultiplos() {
+        let numeros = "";
+
+        for (let i = 0; i <= 10; i++) {
+          numeros += i * 5 + " ";
+        }
+
+        document.getElementById("resultado").textContent =
+          "Contagem: " + numeros;
+      }
+    </script>
+  </body>
+</html>

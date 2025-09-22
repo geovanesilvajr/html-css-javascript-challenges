@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Day 12 - While Desafio</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin-top: 50px;
+      }
+      button {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border: none;
+        background: #28a745;
+        color: white;
+        border-radius: 5px;
+      }
+      button:hover {
+        background: #1e7e34;
+      }
+      #resultado {
+        margin-top: 20px;
+        font-size: 18px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>📱 App While - Desafio</h1>
+    <p>Clique para ver a contagem de 20 até 10.</p>
+
+    <button onclick="contar()">Contar</button>
+    <p id="resultado"></p>
+
+    <script>
+      function contar() {
+        let i = 20;
+        let numeros = "";
+
+        while (i >= 10) {
+          numeros += i + " ";
+          i--;
+        }
+        document.getElementById("resultado").textContent =
+          "Numeros: " + numeros;
+      }
+    </script>
+  </body>
+</html>

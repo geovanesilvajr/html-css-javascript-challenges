@@ -20,3 +20,4 @@ O objetivo é praticar **JS + lógica de programação** com foco em **desenvolv
 - [Função Simples - Dobro de um Número](./day-09-simple-function/index.html) — Calcula o triplo de um número informado pelo usuário.
 - [Mini-projeto - Calculadora de IMC](./day-10-imc-calculator/index.html) — Calcula o **IMC** a partir do peso e altura, retornando também a classificação.
 - [For Básico - Contagem de 1 a 10](./day-11-basic-for/index.html) — Exibe a contagem de 1 até 10 utilizando laço `for`.
+- [While - Contagem de 10 a 1](./day-12-basic-while/index.html) — Exibe a contagem regressiva de 10 até 1 utilizando laço `while`.

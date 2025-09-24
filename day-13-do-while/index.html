@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App da Porta Secreta</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #eef2f7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      .container {
+        background: #fff;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        max-width: 350px;
+      }
+
+      h1 {
+        font-size: 20px;
+        color: #222;
+      }
+
+      button {
+        margin-top: 15px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 16px;
+        background-color: #28a745;
+        color: white;
+      }
+
+      button:hover {
+        background-color: #1e7e34;
+      }
+
+      #resultado {
+        margin-top: 15px;
+        font-size: 16px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>🚪 App da Porta Secreta</h1>
+      <p>Clique no botão e descubra o código para abrir a porta.</p>
+      <button onclick="abrirPorta()">Abrir Porta</button>
+      <p id="resultado"></p>
+    </div>
+
+    <script>
+      function abrirPorta() {
+        const resultado = document.getElementById("resultado");
+        let tentativa;
+        let tentativas = 0;
+        senhaCorreta = "1234";
+
+        do {
+          tentativa = prompt("Digite o codigo secreto e clique em confirmar.");
+
+          tentativas++;
+
+          if (tentativa === null) {
+            resultado.textContent = "Tentativa cancelada";
+            resultado.style.color = "grey";
+            return;
+          }
+
+          if (tentativa === senhaCorreta) {
+            resultado.textContent = `A tentativa ${tentativas} foi correta. Parabéns! Você abriu a porta.`;
+            resultado.style.color = "green";
+            return;
+          } else {
+            alert(
+              `A tentativa ${tentativas} não abriu a porta. Tente novamente.`
+            );
+          }
+        } while (true);
+      }
+    </script>
+  </body>
+</html>

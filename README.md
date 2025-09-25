@@ -22,3 +22,4 @@ O objetivo é praticar **JS + lógica de programação** com foco em **desenvolv
 - [For Básico - Contagem de 1 a 10](./day-11-basic-for/index.html) — Exibe a contagem de 1 até 10 utilizando laço `for`.
 - [While - Contagem de 10 a 1](./day-12-basic-while/index.html) — Exibe a contagem regressiva de 10 até 1 utilizando laço `while`.
 - [Do...While - Pedir senha até acertar](./day-13-do-while/index.html) — Pede ao usuário um código secreto e só finaliza quando a senha correta é digitada.
+- [Tabuada com For - Quadrados de 1 a 10](./day-14-tabuada-for/index.html) — Mostra os quadrados de 1 a 10 utilizando laço `for`.

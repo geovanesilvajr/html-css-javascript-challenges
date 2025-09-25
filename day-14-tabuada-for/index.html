@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dia 14 - Quadrados App</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding: 20px;
+        background: #eef2ff;
+      }
+
+      h1 {
+        color: #222;
+      }
+
+      button {
+        padding: 10px 20px;
+        background: #2196f3;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-bottom: 10px;
+      }
+
+      button:hover {
+        background: #1976d2;
+      }
+
+      #resultado {
+        margin-top: 40px;
+        text-align: center;
+        max-width: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        background: #fff;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>📱 Quadrados App</h1>
+    <p>Clique no botão para ver os quadrados de 1 a 10:</p>
+    <button onclick="mostrarQuadrados()">Mostrar Quadrados</button>
+    <div id="resultado"></div>
+
+    <script>
+      // 👉 Sua missão: implementar a lógica usando um laço for
+      // Dica: use innerHTML += dentro do laço para ir construindo o resultado
+
+      function mostrarQuadrados() {
+        const resultado = document.getElementById("resultado");
+
+        let quadrados = "";
+        for (let i = 1; i <= 10; i++) {
+          quadrados += ` ${i} elevado a 2 é: ${i ** 2} <br/>`;
+        }
+        resultado.innerHTML = quadrados;
+        resultado.style.color = "black";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>App Soma de Múltiplos</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #eef2f3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      .app {
+        background: #fff;
+        padding: 2rem;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        width: 300px;
+      }
+      h1 {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+        color: #333;
+      }
+      button {
+        padding: 0.6rem 1.2rem;
+        border: none;
+        border-radius: 8px;
+        background: #2196f3;
+        color: white;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background 0.3s;
+      }
+      button:hover {
+        background: #1976d2;
+      }
+      p {
+        margin-top: 1rem;
+        font-weight: bold;
+        color: #222;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="app">
+      <h1>App Soma de Múltiplos</h1>
+      <button onclick="calcular()">Calcular</button>
+      <p id="resultado"></p>
+    </div>
+
+    <!-- 👉 Sua missão: implementar o script JS aqui -->
+    <script>
+      // escreva o código que calcula a soma dos múltiplos de 3 entre 1 e 30
+      // e exibe o resultado no <p> com id "resultado"
+
+      function calcular() {
+        soma = 0;
+
+        for (let i = 1; i <= 30; i++) {
+          if (i % 3 === 0) {
+            soma += i;
+          }
+        }
+        document.getElementById(
+          "resultado"
+        ).innerText = `A soma dos multiplos de 3 é : ${soma} `;
+
+        document.getElementById("resultado").style.color = "gray";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dia 16 - Desafio Extra</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #eef2f7;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+      }
+      h1 {
+        color: #444;
+      }
+      button {
+        padding: 10px 20px;
+        background: #28a745;
+        border: none;
+        border-radius: 6px;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        margin-top: 15px;
+      }
+      button:hover {
+        background: #1e7e34;
+      }
+      p {
+        margin-top: 20px;
+        font-size: 18px;
+        color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>📱 App de Números Pares</h1>
+    <button onclick="mostrarPares()">Mostrar Pares até 40</button>
+    <p id="resultado"></p>
+
+    <script>
+      const mostrarPares = () => {
+        numeros = "";
+
+        for (let i = 1; i <= 40; i++) {
+          if (i % 2 === 0) {
+            numeros += i + " ";
+          }
+        }
+        document.getElementById(
+          "resultado"
+        ).innerText = `Os numeros pares até 40 são: ${numeros}`;
+        document.getElementById("resultado").style.color = "blue";
+      };
+    </script>
+  </body>
+</html>

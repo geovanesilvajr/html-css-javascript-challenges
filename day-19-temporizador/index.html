@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>App Timer - Minutos</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background: #eef2ff;
+        padding: 40px;
+      }
+      .app {
+        max-width: 400px;
+        margin: auto;
+        background: white;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      input {
+        width: 100px;
+        padding: 5px;
+        margin: 10px 0;
+        text-align: center;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+      }
+      button {
+        background: #007bff;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        margin-top: 10px;
+        cursor: pointer;
+        border-radius: 6px;
+      }
+      button:hover {
+        background: #0056b3;
+      }
+      #resultado {
+        margin-top: 20px;
+        font-size: 1.5em;
+        color: #222;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="app">
+      <h2>⏳ Timer em Minutos</h2>
+      <p>Digite um número de minutos:</p>
+      <input type="number" id="tempo" placeholder="Ex: 2" min="1" />
+      <br />
+      <button onclick="iniciar()">Iniciar</button>
+      <p id="resultado"></p>
+    </div>
+
+    <script>
+      // 👉 Sua missão: implementar a lógica de contagem regressiva
+      // Dica: converta minutos para segundos (minutos * 60)
+      // Use setInterval para atualizar a cada segundo
+
+      let intervalo;
+      function iniciar() {
+        const minutos = parseInt(document.getElementById("tempo").value);
+        const resultado = document.getElementById("resultado");
+
+        let segundos = minutos * 60;
+
+        clearInterval(intervalo);
+
+        if (isNaN(segundos) || segundos <= 0) {
+          resultado.innerText = "Digite um número válido.";
+          resultado.style.color = "red";
+          return;
+        }
+
+        resultado.innerText = `Segundos restantes: ${segundos}`;
+
+        intervalo = setInterval(() => {
+          segundos--;
+          if (segundos > 0) {
+            resultado.innerText = `Segundos restantes: ${segundos}`;
+          } else {
+            resultado.innerText = "O tempo acabou";
+            clearInterval(intervalo);
+          }
+        }, 1000);
+      }
+    </script>
+  </body>
+</html>

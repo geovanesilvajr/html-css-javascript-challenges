@@ -26,3 +26,4 @@ O objetivo é praticar **JS + lógica de programação** com foco em **desenvolv
 - [Soma de Pares - 1 a 50](./day-15-soma-pares/index.html) — Calcula a soma de todos os números pares no intervalo de 1 até 50.
 - [Números Pares até 40](./day-16-pares-ate-40/index.html) — Mostra todos os números pares até 40 utilizando laço `for`.
 - [Simulador de Temporizador](./day-19-temporizador/index.html) — Faz uma contagem regressiva em segundos a partir de um valor digitado em minutos.
+- [Mini-projeto - Lista de Tarefas Simples](./day-20-todo-list/index.html) — Permite adicionar itens a uma lista de tarefas de forma dinâmica.

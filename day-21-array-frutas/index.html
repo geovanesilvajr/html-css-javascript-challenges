@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>App de Linguagens 💻</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #eef6ff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      .container {
+        background: #fff;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+        text-align: center;
+        width: 300px;
+      }
+
+      h1 {
+        font-size: 20px;
+        margin-bottom: 15px;
+      }
+
+      button {
+        background: #2196f3;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        margin-top: 10px;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background 0.2s;
+      }
+
+      button:hover {
+        background: #1976d2;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin-top: 15px;
+        text-align: left;
+      }
+
+      li {
+        background: #f1f1f1;
+        margin-bottom: 6px;
+        padding: 6px;
+        border-radius: 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>💻 Lista de Linguagens</h1>
+      <button onclick="mostrarLinguagens()">Exibir Linguagens</button>
+      <ul id="listaLinguagens"></ul>
+    </div>
+
+    <script>
+      // 👉 Sua missão:
+      // 1. Criar um array de linguagens de programação (ex: "JavaScript", "Python", "Java", "C#", "Ruby").
+      // 2. Exibir esses itens dentro da <ul> quando o botão for clicado.
+
+      function mostrarLinguagens() {
+        const linguagens = ["JavaScript", "Python", "Java", "Ruby", "C#"];
+        const lista = document.getElementById("listaLinguagens");
+
+        lista.innerHTML = "";
+
+        linguagens.forEach((linguagem) => {
+          const li = document.createElement("li");
+          li.textContent = linguagem;
+          lista.appendChild(li);
+        });
+      }
+    </script>
+  </body>
+</html>

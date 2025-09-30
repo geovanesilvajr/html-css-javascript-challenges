@@ -27,3 +27,4 @@ O objetivo é praticar **JS + lógica de programação** com foco em **desenvolv
 - [Números Pares até 40](./day-16-pares-ate-40/index.html) — Mostra todos os números pares até 40 utilizando laço `for`.
 - [Simulador de Temporizador](./day-19-temporizador/index.html) — Faz uma contagem regressiva em segundos a partir de um valor digitado em minutos.
 - [Mini-projeto - Lista de Tarefas Simples](./day-20-todo-list/index.html) — Permite adicionar itens a uma lista de tarefas de forma dinâmica.
+- [Array de Frutas](./day-21-array-frutas/index.html) — Cria um array de frutas e exibe os itens em uma lista dinâmica.

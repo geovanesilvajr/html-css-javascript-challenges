@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dia 22 - App de Lista de Cidades</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #eef;
+        text-align: center;
+        padding: 30px;
+      }
+      h1 {
+        color: #222;
+      }
+      input,
+      button {
+        padding: 8px;
+        margin: 5px;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+        margin-top: 20px;
+      }
+      li {
+        background: #fff;
+        margin: 5px auto;
+        padding: 8px;
+        width: 250px;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>🏙️ Lista de Cidades</h1>
+
+    <input type="text" id="cidade" placeholder="Digite uma cidade" />
+    <br />
+    <button>Adicionar Início (unshift)</button>
+    <button>Adicionar Fim (push)</button>
+    <button>Remover Início (shift)</button>
+    <button>Remover Fim (pop)</button>
+
+    <ul id="listaCidades"></ul>
+
+    <!-- 👉 Sua missão: implementar o JS -->
+
+    <script>
+      let cidades = [];
+    </script>
+  </body>
+</html>

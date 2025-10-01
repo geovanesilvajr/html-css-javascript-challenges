@@ -28,3 +28,4 @@ O objetivo é praticar **JS + lógica de programação** com foco em **desenvolv
 - [Simulador de Temporizador](./day-19-temporizador/index.html) — Faz uma contagem regressiva em segundos a partir de um valor digitado em minutos.
 - [Mini-projeto - Lista de Tarefas Simples](./day-20-todo-list/index.html) — Permite adicionar itens a uma lista de tarefas de forma dinâmica.
 - [Array de Frutas](./day-21-array-frutas/index.html) — Cria um array de frutas e exibe os itens em uma lista dinâmica.
+- [Adicionar e Remover Itens (push, pop, shift, unshift)](./day-22-array-methods/index.html) — Manipula arrays adicionando e removendo elementos no início ou no fim.

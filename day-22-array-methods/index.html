@@ -38,10 +38,10 @@
 
     <input type="text" id="cidade" placeholder="Digite uma cidade" />
     <br />
-    <button>Adicionar Início (unshift)</button>
-    <button>Adicionar Fim (push)</button>
-    <button>Remover Início (shift)</button>
-    <button>Remover Fim (pop)</button>
+    <button onclick="adicionarInicio()">Adicionar Início (unshift)</button>
+    <button onclick="adicionarFim()">Adicionar Fim (push)</button>
+    <button onclick="removerInicio()">Remover Início (shift)</button>
+    <button onclick="removerFim()">Remover Fim (pop)</button>
 
     <ul id="listaCidades"></ul>
 
@@ -49,6 +49,24 @@
 
     <script>
       let cidades = [];
+
+      function atualizarLista() {
+        const lista = document.getElementById("listaCidades");
+        lista.innerHTML = "";
+        cidades.forEach((cidade) => {
+          const li = document.createElement("li");
+          li.textContent = cidade;
+          lista.appendChild(li);
+        });
+      }
+
+      function adicionarInicio() {
+        const cidade = document.getElementById("cidade").value.trim();
+        if (cidade === "") return alert("Digite uma cidade.");
+        cidades.unshift(cidade);
+        atualizarLista();
+        document.getElementById("cidade").value = "";
+      }
     </script>
   </body>
 </html>

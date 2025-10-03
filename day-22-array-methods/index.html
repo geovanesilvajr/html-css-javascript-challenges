@@ -67,6 +67,24 @@
         atualizarLista();
         document.getElementById("cidade").value = "";
       }
+
+      function adicionarFim() {
+        const cidade = document.getElementById("cidade").value.trim();
+        if (cidade === "") return alert("Digite uma cidade");
+        cidades.push(cidade);
+        atualizarLista();
+        document.getElementById("cidade").value = "";
+      }
+
+      function removerInicio() {
+        cidades.shift();
+        atualizarLista();
+      }
+
+      const removerFim = () => {
+        cidades.pop();
+        atualizarLista();
+      };
     </script>
   </body>
 </html>

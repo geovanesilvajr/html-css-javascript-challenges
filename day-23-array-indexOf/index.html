@@ -1,0 +1,139 @@
+<html>
+  <!DOCTYPE html>
+  <html lang="pt-BR">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Dia 23 - Encontrar item (indexOf, includes)</title>
+      <style>
+        body {
+          font-family: Arial, sans-serif;
+          text-align: center;
+          margin: 40px;
+          background: #f7f7f7;
+          color: #333;
+        }
+        h1 {
+          color: #2c3e50;
+        }
+        input {
+          padding: 8px;
+          width: 200px;
+          margin: 10px 0;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+        }
+        button {
+          padding: 8px 14px;
+          margin: 5px;
+          background: #3498db;
+          border: none;
+          color: white;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+        button:hover {
+          background: #2980b9;
+        }
+        p {
+          margin-top: 15px;
+          font-size: 1.1em;
+        }
+        .passos {
+          margin: 20px auto;
+          padding: 15px;
+          max-width: 600px;
+          background: #ecf0f1;
+          border-left: 5px solid #3498db;
+          text-align: left;
+        }
+        .dica {
+          margin: 10px 0;
+          padding: 10px;
+          background: #fff3cd;
+          border-left: 5px solid #f39c12;
+        }
+      </style>
+    </head>
+    <body>
+      <h1>🚀 Dia 23 - Encontrar item (indexOf, includes)</h1>
+      <p>Digite o nome de uma fruta e verifique se ela existe na lista:</p>
+
+      <input type="text" id="fruta" placeholder="Ex: maçã" />
+      <button onclick="verificarFruta()">Verificar</button>
+
+      <p id="resultado"></p>
+
+      <div class="passos">
+        <h2>📝 Passos para resolver:</h2>
+        <ol>
+          <li>
+            Crie um <code>array</code> chamado <strong>frutas</strong> com
+            alguns nomes de frutas.
+          </li>
+          <li>
+            No botão <code>onclick="verificarFruta()"</code>, crie uma função
+            chamada <code>verificarFruta()</code>.
+          </li>
+          <li>
+            Pegue o valor digitado no campo de entrada usando
+            <code>document.getElementById("fruta").value</code>.
+          </li>
+          <li>
+            Use <code>includes()</code> ou <code>indexOf()</code> para verificar
+            se a fruta está no array.
+          </li>
+          <li>
+            Se existir, exiba no parágrafo com id <code>resultado</code> a
+            mensagem: ✅ "A fruta X está na lista".
+          </li>
+          <li>Se não existir, exiba: ❌ "A fruta X não está na lista".</li>
+        </ol>
+      </div>
+
+      <div class="dica">
+        💡 <strong>Dicas úteis:</strong>
+        <ul>
+          <li>
+            <code>array.includes("item")</code> retorna <code>true</code> ou
+            <code>false</code>.
+          </li>
+          <li>
+            <code>array.indexOf("item")</code> retorna a posição no array ou
+            <code>-1</code> se não encontrar.
+          </li>
+          <li>
+            Não esqueça de deixar o resultado dinâmico usando
+            <code>innerText</code>.
+          </li>
+        </ul>
+      </div>
+
+      <script>
+        // 👉 Sua missão: implementar a lógica da função verificarFruta()
+        // 1. Crie um array de frutas
+        // 2. Capture o valor do input
+        // 3. Verifique com includes() ou indexOf()
+        // 4. Exiba o resultado na <p> com id "resultado"
+
+        function verificarFruta() {
+          let frutas = ["maçã", "banana", "uva", "melancia", "pera", "abacate"];
+          const input = document.getElementById("fruta").value.trim();
+          const resultado = document.getElementById("resultado");
+
+          if (input === "") {
+            alert("Digite uma fruta");
+            return;
+          }
+
+          if (frutas.includes(input)) {
+            resultado.innerText = `✅ "A fruta ${input} está na lista".`;
+          } else {
+            resultado.innerText = `❌ "A fruta ${input} não está na lista".`;
+          }
+          document.getElementById("fruta").value = "";
+        }
+      </script>
+    </body>
+  </html>
+</html>

@@ -7,7 +7,7 @@ O objetivo é praticar **JS + lógica de programação** com foco em **desenvolv
 
 ## 📂 Índice de Desafios
 
-[Título](./day-XX-nome-pasta/index.html) — descrição.
+- [Título](./day-XX-nome-pasta/index.html) — descrição.
 
 - [Variáveis e Console](./variables-console/index.html) — Captura nome e nota do app e exibe no console.
 - [Calculadora Simples](./simple-calculator/index.html) — Multiplica dois números e exibe o resultado.
@@ -32,3 +32,4 @@ O objetivo é praticar **JS + lógica de programação** com foco em **desenvolv
 - [Array de Frutas](./day-21-array-frutas/index.html) — Cria um array de frutas e exibe os itens em uma lista dinâmica.
 - [Adicionar e Remover Itens (push, pop, shift, unshift)](./day-22-array-methods/index.html) — Manipula arrays adicionando e removendo elementos no início ou no fim.
   [Encontrar Item (indexOf, includes)](./day-23-array-indexOf/index.html) — Verifica se um item existe em um array usando métodos de busca.
+- [Percorrer Array com For](./day-24-array-for/index.html) — Cria um array de filmes e percorre seus itens com for, exibindo-os dinamicamente em uma lista.

@@ -33,3 +33,4 @@ O objetivo é praticar **JS + lógica de programação** com foco em **desenvolv
 - [Adicionar e Remover Itens (push, pop, shift, unshift)](./day-22-array-methods/index.html) — Manipula arrays adicionando e removendo elementos no início ou no fim.
   [Encontrar Item (indexOf, includes)](./day-23-array-indexOf/index.html) — Verifica se um item existe em um array usando métodos de busca.
 - [Percorrer Array com For](./day-24-array-for/index.html) — Cria um array de filmes e percorre seus itens com for, exibindo-os dinamicamente em uma lista.
+- [- [Percorrer Array com for...of]](./day-25-forOf-array/index.html) — Utiliza o laço for...of para percorrer um array de usuários e exibir os nomes dinamicamente em uma lista.

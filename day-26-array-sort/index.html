@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App de Ordenação - Dia 26</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #fafafa;
+        padding: 20px;
+        text-align: center;
+      }
+      h1 {
+        color: #222;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+        margin-top: 20px;
+      }
+      li {
+        background: #9c27b0;
+        color: #fff;
+        margin: 8px auto;
+        padding: 10px;
+        width: 250px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>🔤 Lista de Nomes Ordenados</h1>
+    <ul id="listaNomes"></ul>
+    <button onclick="listarNomes()">Exibir nomes</button>
+    <script>
+      // 👉 Escreva seu código JavaScript aqui
+
+      const nomes = ["Carlos", "Ana", "Eduardo", "Beatriz", "Felipe"];
+      nomes.sort();
+      function listarNomes() {
+        const lista = document.getElementById("listaNomes");
+        for (nome of nomes) {
+          const li = document.createElement("li");
+          li.textContent = nome;
+          lista.appendChild(li);
+        }
+      }
+    </script>
+  </body>
+</html>

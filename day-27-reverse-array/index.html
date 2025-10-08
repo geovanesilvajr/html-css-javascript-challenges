@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App Inverter Array - Dia 27</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f7f7f7;
+        padding: 20px;
+        text-align: center;
+      }
+      h1 {
+        color: #333;
+        margin-bottom: 10px;
+      }
+      button {
+        background-color: #009688;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background 0.3s;
+      }
+      button:hover {
+        background-color: #00796b;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+        margin-top: 20px;
+      }
+      li {
+        background: #009688;
+        color: white;
+        margin: 8px auto;
+        padding: 10px;
+        width: 250px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>🔁 App Inverter Array</h1>
+    <button onclick="listarNomes()">Inverter Lista</button>
+    <ul id="listaNomes"></ul>
+    <script>
+      // 👉 Escreva seu código JavaScript aqui
+
+      function listarNomes() {
+        const nomes = ["João", "Maria", "Jose", "Paulo", "Pedro"];
+
+        const lista = document.getElementById("listaNomes");
+        lista.innerHTML = "";
+
+        nomes.reverse();
+
+        for (nome of nomes) {
+          const li = document.createElement("li");
+          li.textContent = nome;
+          lista.appendChild(li);
+        }
+      }
+    </script>
+  </body>
+</html>

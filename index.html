@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App Soma de Números - Dia 28</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f8f8f8;
+        text-align: center;
+        padding: 20px;
+      }
+      h1 {
+        color: #333;
+      }
+      button {
+        background-color: #4caf50;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background 0.3s;
+      }
+      button:hover {
+        background-color: #45a049;
+      }
+      p {
+        font-size: 20px;
+        color: #222;
+        margin-top: 20px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>🧮 App Soma de Números</h1>
+    <button onclick="calcularSoma()">Calcular Soma</button>
+    <p id="resultado"></p>
+    <script>
+      // 👉 Escreva seu código JavaScript aqui
+
+      function calcularSoma() {
+        const resultado = document.getElementById("resultado");
+
+        const numeros = [1, 10, 14, 158, 167, 89];
+
+        let soma = 0;
+        for (const numero of numeros) {
+          soma += numero;
+        }
+        resultado.textContent = `A soma dos números é ${soma}`;
+      }
+    </script>
+  </body>
+</html>

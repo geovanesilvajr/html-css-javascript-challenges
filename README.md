@@ -36,3 +36,4 @@ O objetivo é praticar **JS + lógica de programação** com foco em **desenvolv
 - [- [Percorrer Array com for...of]](./day-25-forOf-array/index.html) — Utiliza o laço for...of para percorrer um array de usuários e exibir os nomes dinamicamente em uma lista.
 - [Ordenar Array com sort](./day-26-array-sort/index.html) — Utiliza o método sort() para ordenar alfabeticamente um array de nomes e exibi-los dinamicamente em uma lista.
 - [Inverter Array com reverse](./day-27-reverse-array/index.html) — Utiliza o método `reverse()` para inverter a ordem dos elementos de um array e exibi-los dinamicamente em uma lista.
+- [Criar Array de Números e Calcular Soma](./day-28-sum-array/index.html) — Cria um array de números e calcula automaticamente a soma total, exibindo o resultado dinamicamente na tela.

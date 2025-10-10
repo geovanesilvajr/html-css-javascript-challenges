@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App Maior e Menor Valor - Dia 29</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f4f4f4;
+        text-align: center;
+        padding: 20px;
+      }
+      h1 {
+        color: #333;
+      }
+      button {
+        background-color: #3f51b5;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background 0.3s;
+        margin-top: 10px;
+      }
+      button:hover {
+        background-color: #303f9f;
+      }
+      p {
+        font-size: 18px;
+        color: #222;
+        margin-top: 15px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>📊 App Maior e Menor Valor</h1>
+    <button onclick="analisarNumeros()">Analisar Números</button>
+    <p id="maior"></p>
+    <p id="menor"></p>
+    <script>
+      // 👉 Escreva seu código JavaScript aqui
+
+      function analisarNumeros() {
+        const maior = document.getElementById("maior");
+        const menor = document.getElementById("menor");
+
+        const numeros = [2, 8, 58, 14, 79, 57, 69];
+
+        const max = Math.max(...numeros);
+        const min = Math.min(...numeros);
+        maior.innerText = `O maior valor do array de números é: ${max}`;
+        menor.innerText = `O menor valor do array de números é: ${min}`;
+      }
+    </script>
+  </body>
+</html>

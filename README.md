@@ -38,3 +38,4 @@ O objetivo é praticar **JS + lógica de programação** com foco em **desenvolv
 - [Inverter Array com reverse](./day-27-reverse-array/index.html) — Utiliza o método `reverse()` para inverter a ordem dos elementos de um array e exibi-los dinamicamente em uma lista.
 - [Criar Array de Números e Calcular Soma](./day-28-sum-array/index.html) — Cria um array de números e calcula automaticamente a soma total, exibindo o resultado dinamicamente na tela.
 - [Encontrar Maior e Menor Valor](./day-29-maior-menor/index.html) — Cria um app que identifica e exibe o maior e o menor número de um array na tela.
+- [Mini-projeto - App de Lista de Compras](./day-30-shopping-list/index.html) — Permite adicionar itens a uma lista de compras dinamicamente, exibindo cada produto na tela conforme o usuário digita.

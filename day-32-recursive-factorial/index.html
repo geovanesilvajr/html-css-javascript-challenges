@@ -78,20 +78,30 @@
     <script>
       // 👉 Escreva seu código JavaScript aqui
 
-      function calcularFatorial(n) {
-        const input = document.getElementById("numero");
-        const resultado = document.getElementById("resultado");
-
-        n = input.value.trim();
-
-        if (n < 0) {
-          return alert("Números negativos não são válidos");
-        } else if (n === 0 || n === 1) {
+      function fatorial(n) {
+        if (n === 0 || n === 1) {
           return 1;
         } else {
-          resultado.textContent = n * calcularFatorial(n - 1);
+          return n * fatorial(n - 1);
+        }
+      }
+
+      function calcularFatorial() {
+        const resultado = document.getElementById("resultado");
+        const n = parseInt(document.getElementById("numero").value);
+
+        if (isNaN(n)) {
+          resultado.textContent = "Digite um número válido";
           return;
         }
+
+        if (n < 0) {
+          resultado.textContent = "Números negativos não são válidos";
+          return;
+        }
+        const resultadoFatorial = fatorial(n);
+        resultado.textContent = `O fatorial de ${n} é ${resultadoFatorial}`;
+        document.getElementById("numero").value = "";
       }
     </script>
   </body>

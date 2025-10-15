@@ -41,3 +41,4 @@ O objetivo é praticar **JS + lógica de programação** com foco em **desenvolv
 - [Mini-projeto - App de Lista de Compras](./day-30-shopping-list/index.html) — Permite adicionar itens a uma lista de compras dinamicamente, exibindo cada produto na tela conforme o usuário digita.
 - [Função que Recebe String e Retorna Invertida](./day-31-string-reverse/index.html) — Cria um app que inverte o texto digitado pelo usuário e exibe o resultado dinamicamente na tela.
 - [Função Recursiva - Fatorial](./day-32-recursive-factorial/index.html) — Cria um app que calcula o fatorial de um número informado pelo usuário utilizando uma função recursiva.
+- [Calculadora Modular com Funções](./day-33-calculadora-modular/index.html) — Criação de um mini app de calculadora onde cada operação (soma, subtração, multiplicação e divisão).

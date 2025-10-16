@@ -58,8 +58,8 @@
     <div class="app">
       <h2>🧮 Calculadora Modular</h2>
 
-      <input type="number" id="numero1" placeholder="Digite o primeiro número" />
-      <input type="number" id="numero2" placeholder="Digite o segundo número" />
+      <input type="text" id="numero1" placeholder="Digite o primeiro número" />
+      <input type="text" id="numero2" placeholder="Digite o segundo número" />
 
       <select id="operacao">
         <option value="">Selecione a operação</option>
@@ -75,3 +75,56 @@
     </div>
 
     <script>
+      const resultado = document.getElementById("resultado");
+      const operacao = document.getElementById("operacao");
+      const num1 = document.getElementById("numero1");
+      const num2 = document.getElementById("numero2");
+
+      const numero1 = Number(num1.value);
+      const numero2 = Number(num2.value);
+
+      function soma() {
+        const soma = numero1 + numero2;
+        resultado.textContent = soma;
+      }
+
+      function subtracao() {
+        const subtracao = numero1 - numero2;
+        resultado.textContent = subtracao;
+      }
+
+      function divisao() {
+        const divisao = (resultado.textContent = `${numero1} / ${numero2} = ${
+          numero1 / numero2
+        }`);
+        return;
+      }
+
+      function multiplicacao() {
+        const multiplicacao =
+          (resultado.textContent = `${numero1} * ${numero2} = ${
+            numero1 * numero2
+          }`);
+        return;
+      }
+
+      function calcular() {
+        if (operacao.value === "soma") {
+          soma();
+        }
+
+        if (operacao.value === "subtracao") {
+          subtracao();
+        }
+
+        if (operacao.value === "divisao") {
+          divisao();
+        }
+
+        if (operacao.value === "multiplicacao") {
+          multiplicacao();
+        }
+      }
+    </script>
+  </body>
+</html>

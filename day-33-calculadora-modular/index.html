@@ -58,8 +58,12 @@
     <div class="app">
       <h2>🧮 Calculadora Modular</h2>
 
-      <input type="text" id="numero1" placeholder="Digite o primeiro número" />
-      <input type="text" id="numero2" placeholder="Digite o segundo número" />
+      <input
+        type="number"
+        id="numero1"
+        placeholder="Digite o primeiro número"
+      />
+      <input type="number" id="numero2" placeholder="Digite o segundo número" />
 
       <select id="operacao">
         <option value="">Selecione a operação</option>
@@ -77,53 +81,39 @@
     <script>
       const resultado = document.getElementById("resultado");
       const operacao = document.getElementById("operacao");
-      const num1 = document.getElementById("numero1");
-      const num2 = document.getElementById("numero2");
 
-      const numero1 = Number(num1.value);
-      const numero2 = Number(num2.value);
-
-      function soma() {
-        const soma = numero1 + numero2;
-        resultado.textContent = soma;
+      function soma(a, b) {
+        return a + b;
       }
 
-      function subtracao() {
-        const subtracao = numero1 - numero2;
-        resultado.textContent = subtracao;
+      function subtracao(a, b) {
+        return a - b;
       }
 
-      function divisao() {
-        const divisao = (resultado.textContent = `${numero1} / ${numero2} = ${
-          numero1 / numero2
-        }`);
-        return;
+      function divisao(a, b) {
+        return a / b;
       }
 
-      function multiplicacao() {
-        const multiplicacao =
-          (resultado.textContent = `${numero1} * ${numero2} = ${
-            numero1 * numero2
-          }`);
-        return;
+      function multiplicacao(a, b) {
+        return a * b;
       }
 
       function calcular() {
+        const num1 = Number(document.getElementById("numero1").value);
+        const num2 = Number(document.getElementById("numero2").value);
+
+        let resultadoFinal = "";
+
         if (operacao.value === "soma") {
-          soma();
+          resultadoFinal = `${num1} + ${num2} = ${soma(num1, num2)}`;
+        } else if (operacao.value === "subtracao") {
+          resultadoFinal = `${num1} - ${num2} = ${subtracao(num1, num2)}`;
+        } else if (operacao.value === "divisao") {
+          resultadoFinal = `${num1} / ${num2} = ${divisao(num1, num2)}`;
+        } else if (operacao.value === "multiplicacao") {
+          resultadoFinal = `${num1} * ${num2} = ${multiplicacao(num1, num2)}`;
         }
-
-        if (operacao.value === "subtracao") {
-          subtracao();
-        }
-
-        if (operacao.value === "divisao") {
-          divisao();
-        }
-
-        if (operacao.value === "multiplicacao") {
-          multiplicacao();
-        }
+        resultado.textContent = resultadoFinal;
       }
     </script>
   </body>

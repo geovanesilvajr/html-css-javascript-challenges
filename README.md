@@ -43,3 +43,4 @@ O objetivo é praticar **JS + lógica de programação** com foco em **desenvolv
 - [Função Recursiva - Fatorial](./day-32-recursive-factorial/index.html) — Cria um app que calcula o fatorial de um número informado pelo usuário utilizando uma função recursiva.
 - [Calculadora Modular com Funções](./day-33-calculadora-modular/index.html) — Criação de um mini app de calculadora onde cada operação (soma, subtração, multiplicação e divisão).
 - [Objeto Pessoa (nome e idade)](./day-34-objeto-pessoa/index.html) — Cria um app que recebe nome e idade do usuário, gera um objeto `pessoa` e exibe suas informações dinamicamente na tela.
+- [Acessar propriedades de objeto](./day-35-propriedade-objeto/index.html) — Crie um objeto pessoa com nome, idade e profissão. Depois, acesse e exiba essas propriedades na tela.

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dia 35 - Acessar propriedades de objeto</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: #f4f4f4;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        min-height: 100vh;
+        margin: 0;
+        padding: 2rem;
+      }
+
+      h1 {
+        color: #333;
+      }
+
+      .app-container {
+        background: #fff;
+        padding: 1.5rem 2rem;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        max-width: 400px;
+        width: 100%;
+      }
+
+      label {
+        display: block;
+        margin-top: 1rem;
+        font-weight: bold;
+      }
+
+      input {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      button {
+        background: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 6px;
+        cursor: pointer;
+        margin-top: 1rem;
+        width: 100%;
+      }
+
+      button:hover {
+        background: #0056b3;
+      }
+
+      p {
+        font-size: 1rem;
+        color: #333;
+        margin-top: 1.5rem;
+        text-align: center;
+      }
+
+      .hint {
+        font-size: 0.9rem;
+        color: #555;
+        background: #e7f3ff;
+        border-left: 4px solid #007bff;
+        padding: 10px;
+        margin-top: 1rem;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>🧠 Dia 35: Acessar propriedades de objeto</h1>
+
+    <div class="app-container">
+      <p>
+        Crie um objeto <code>pessoa</code> com nome, idade e profissão. Depois,
+        acesse e exiba essas propriedades na tela.
+      </p>
+
+      <button onclick="mostrarDados()">Mostrar Dados</button>
+
+      <p id="resultado">Clique no botão para ver as informações.</p>
+
+      <div class="hint">
+        <strong>Dicas:</strong>
+        <ul>
+          <li>
+            Crie um objeto chamado <code>pessoa</code> com as propriedades
+            <code>nome</code>, <code>idade</code> e <code>profissao</code>.
+          </li>
+          <li>
+            Acesse cada propriedade com <code>pessoa.nome</code>,
+            <code>pessoa.idade</code> e <code>pessoa.profissao</code>.
+          </li>
+          <li>Exiba os dados no parágrafo com <code>textContent</code>.</li>
+        </ul>
+      </div>
+    </div>
+
+    <script>
+      // 👉 Escreva seu código JavaScript aqui
+
+      const resultado = document.getElementById("resultado");
+
+      const pessoa = {
+        nome: "João",
+        idade: 38,
+        profissao: "Cozinheiro",
+      };
+
+      function mostrarDados() {
+        resultado.textContent = `Nome: ${pessoa.nome}, Idade: ${pessoa.idade}, Profissão: ${pessoa.profissao} `;
+        resultado.style.color = "black";
+      }
+    </script>
+  </body>
+</html>

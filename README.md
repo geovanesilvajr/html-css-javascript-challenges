@@ -44,3 +44,4 @@ O objetivo é praticar **JS + lógica de programação** com foco em **desenvolv
 - [Calculadora Modular com Funções](./day-33-calculadora-modular/index.html) — Criação de um mini app de calculadora onde cada operação (soma, subtração, multiplicação e divisão).
 - [Objeto Pessoa (nome e idade)](./day-34-objeto-pessoa/index.html) — Cria um app que recebe nome e idade do usuário, gera um objeto `pessoa` e exibe suas informações dinamicamente na tela.
 - [Acessar propriedades de objeto](./day-35-propriedade-objeto/index.html) — Crie um objeto pessoa com nome, idade e profissão. Depois, acesse e exiba essas propriedades na tela.
+- [Adicionar e remover propriedades objeto](./day-36-alterar-objeto/index.html) — Crie um app simples que modifica um objeto JavaScript, adicionando e removendo propriedades. O objetivo é praticar a manipulação de objetos e o uso de métodos como `delete` e `JSON.stringify()` para exibir o resultado na tela.

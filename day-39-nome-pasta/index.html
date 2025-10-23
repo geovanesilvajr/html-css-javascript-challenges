@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dia 39 - Objeto dentro de Objeto</title>
+    <style>
+      body {
+        font-family: "Segoe UI", sans-serif;
+        background-color: #f5f6fa;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+
+      main {
+        background: #fff;
+        padding: 2rem;
+        border-radius: 1rem;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        width: 340px;
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        color: #222;
+      }
+
+      button {
+        margin-top: 1rem;
+        background-color: #0078ff;
+        color: white;
+        border: none;
+        padding: 0.6rem 1.2rem;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        transition: background 0.3s;
+      }
+
+      button:hover {
+        background-color: #005ed1;
+      }
+
+      p {
+        margin-top: 1rem;
+        font-size: 1rem;
+        color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>🚗 App: Objeto dentro de Objeto</h1>
+
+      <button onclick="mostrarCarro()">Mostrar Informações</button>
+
+      <p id="resultado"></p>
+    </main>
+
+    <script>
+      // 👉 Escreva seu código JavaScript aqui
+
+      /*
+        🧠 HISTÓRIAS DE USUÁRIO
+
+        1️⃣ Crie um objeto "carro" com as propriedades: marca, modelo e proprietario (objeto com nome e idade).
+        2️⃣ Acesse os dados usando notação de ponto.
+        3️⃣ Exiba no <p> o texto formatado com marca, modelo e dados do proprietário.
+      */
+
+      function mostrarCarro() {
+        const resultado = document.getElementById("resultado");
+
+        const carro = {
+          marca: "Gol",
+          modelo: "GTI",
+          proprietario: {
+            nome: "Pedro",
+            idade: 25,
+          },
+        };
+
+        resultado.textContent = `Carro: ${carro.marca}, Modelo: ${carro.modelo}, Proprietário: ${carro.proprietario.nome}, Idade: ${carro.proprietario.idade}.`;
+      }
+    </script>
+  </body>
+</html>

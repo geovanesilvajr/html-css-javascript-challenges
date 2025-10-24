@@ -48,3 +48,4 @@ O objetivo é praticar **JS + lógica de programação** com foco em **desenvolv
 - [Métodos em Objetos](./day-37-metodos-objeto/index.html) — Cria um app simples que define um objeto com propriedades e um método interno, permitindo executar uma ação (como exibir uma mensagem personalizada) ao chamar o método.
 - [Percorrer Objeto (for...in)](./day-38-for-in-object/index.html) — Cria um app simples que percorre as propriedades de um objeto usando o loop `for...in` e exibe cada par chave-valor dinamicamente na tela.
 - [Objeto dentro de Objeto (Aninhado)](./day-39-objeto-aninhado/index.html) — Cria um objeto que contenha outro objeto dentro dele (por exemplo, um carro com informações do proprietário).
+- [Array de Objetos](./day-40-array-objetos/index.html) — Cria um app que exiba uma lista de usuários a partir de um array de objetos, mostrando nome e idade na tela.

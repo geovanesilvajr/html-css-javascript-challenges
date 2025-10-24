@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dia 47 - Lista de Usuários</title>
+    <style>
+      body {
+        font-family: "Segoe UI", sans-serif;
+        background-color: #f4f4f9;
+        color: #333;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      h1 {
+        color: #0077ff;
+      }
+
+      .container {
+        background: white;
+        padding: 20px 25px;
+        border-radius: 12px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        width: 320px;
+        text-align: center;
+      }
+
+      button {
+        background-color: #0077ff;
+        color: white;
+        border: none;
+        padding: 10px 16px;
+        margin-top: 10px;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: 0.2s;
+      }
+
+      button:hover {
+        background-color: #005fd1;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin-top: 15px;
+        text-align: left;
+      }
+
+      li {
+        background: #eef3ff;
+        padding: 8px;
+        border-radius: 6px;
+        margin-bottom: 6px;
+      }
+
+      p {
+        color: #666;
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>📱 Lista de Usuários</h1>
+      <p>
+        Clique no botão abaixo para exibir uma lista de usuários (array de
+        objetos).
+      </p>
+      <button onclick="mostrarUsuarios()">Mostrar Usuários</button>
+      <ul id="listaUsuarios"></ul>
+    </div>
+
+    <script>
+      /*
+        🧠 HISTÓRIAS DE USUÁRIO (estilo freeCodeCamp)
+
+        1️⃣ Crie um array chamado "usuarios" contendo pelo menos 3 objetos.
+        2️⃣ Cada objeto deve ter as propriedades: nome e idade.
+        3️⃣ Crie uma função chamada "mostrarUsuarios".
+        4️⃣ Ao clicar no botão, a função deve percorrer o array de objetos e exibir cada usuário na tela.
+        5️⃣ Os usuários devem aparecer dentro da <ul> com id="listaUsuarios", no formato: "Nome: [nome] - Idade: [idade]".
+      */
+
+      // 👉 Escreva seu código JavaScript aqui
+
+      const usuarios = [
+        { nome: "Pedro", idade: 50 },
+        { nome: "João", idade: 40 },
+        { nome: "Maria", idade: 35 },
+      ];
+
+      function mostrarUsuarios() {
+        const lista = document.getElementById("listaUsuarios");
+        lista.innerHTML = "";
+
+        usuarios.forEach((usuario) => {
+          const li = document.createElement("li");
+          li.textContent = `Nome: ${usuario.nome} - Idade: ${usuario.idade}`;
+          lista.appendChild(li);
+        });
+      }
+    </script>
+  </body>
+</html>

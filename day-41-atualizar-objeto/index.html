@@ -68,6 +68,32 @@
 
     <script>
       // 👉 Escreva seu código JavaScript aqui
+
+      const produto = {
+        nome: "Tênis",
+        preco: 59.9,
+        estoque: 5,
+      };
+
+      function atualizarPreco() {
+        const inputPreco = document.getElementById("novoPreco").value.trim();
+        const resultado = document.getElementById("resultado");
+
+        const novoPreco = Number(inputPreco);
+
+        produto.preco = novoPreco;
+
+        if (inputPreco === "" || isNaN(novoPreco)) {
+          resultado.textContent = "Digite um valor numérico válido!";
+          return;
+        }
+
+        resultado.textContent = `Produto: ${
+          produto.nome
+        } | Novo preço: ${novoPreco.toFixed(2)} | Estoque: ${produto.estoque}`;
+
+        document.getElementById("novoPreco").value = "";
+      }
     </script>
   </body>
 </html>

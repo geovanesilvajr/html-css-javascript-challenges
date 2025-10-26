@@ -49,3 +49,4 @@ O objetivo é praticar **JS + lógica de programação** com foco em **desenvolv
 - [Percorrer Objeto (for...in)](./day-38-for-in-object/index.html) — Cria um app simples que percorre as propriedades de um objeto usando o loop `for...in` e exibe cada par chave-valor dinamicamente na tela.
 - [Objeto dentro de Objeto (Aninhado)](./day-39-objeto-aninhado/index.html) — Cria um objeto que contenha outro objeto dentro dele (por exemplo, um carro com informações do proprietário).
 - [Array de Objetos](./day-40-array-objetos/index.html) — Cria um app que exiba uma lista de usuários a partir de um array de objetos, mostrando nome e idade na tela.
+- [Dia 41: Atualizar valores de objetos](./day-41-atualizar-objeto/index.html) — Dia 41: Atualizar valores de objetos.

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dia 42 - Mini-Projeto: Agenda de Contatos</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+        color: #333;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px;
+      }
+
+      h1 {
+        color: #2b2b2b;
+      }
+
+      .container {
+        background: white;
+        padding: 20px 30px;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        max-width: 400px;
+        width: 100%;
+      }
+
+      label {
+        display: block;
+        margin-top: 10px;
+        font-weight: bold;
+      }
+
+      input {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+      }
+
+      button {
+        margin-top: 15px;
+        width: 100%;
+        padding: 10px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-weight: bold;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin-top: 20px;
+      }
+
+      li {
+        background: #f0f8ff;
+        margin: 5px 0;
+        padding: 10px;
+        border-radius: 8px;
+      }
+
+      .instrucoes {
+        background: #eaf5ff;
+        border-left: 4px solid #007bff;
+        padding: 15px;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>📇 Mini-Projeto: Agenda de Contatos</h1>
+    <div class="container">
+      <div class="instrucoes">
+        <strong>🧠 HISTÓRIAS DE USUÁRIO (estilo freeCodeCamp)</strong>
+        <ul>
+          <li>
+            1️⃣ Crie um array chamado <code>contatos</code> para armazenar os
+            contatos.
+          </li>
+          <li>
+            2️⃣ Cada contato deve ser um objeto com propriedades
+            <code>nome</code> e <code>telefone</code>.
+          </li>
+          <li>
+            3️⃣ Ao clicar em <strong>Adicionar Contato</strong>, o novo contato
+            deve ser adicionado ao array.
+          </li>
+          <li>
+            4️⃣ Mostre todos os contatos na lista abaixo, no formato
+            <code>Nome - Telefone</code>.
+          </li>
+        </ul>
+      </div>
+
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" placeholder="Digite o nome" />
+
+      <label for="telefone">Telefone:</label>
+      <input type="text" id="telefone" placeholder="Digite o telefone" />
+
+      <button onclick="adicionarContato()">Adicionar Contato</button>
+
+      <ul id="listaContatos"></ul>
+    </div>
+
+    <script>
+      // 👉 Escreva seu código JavaScript aqui
+
+      const contatos = [];
+
+      function atualizarLista() {
+        const lista = document.getElementById("listaContatos");
+        lista.innerHTML = "";
+        contatos.forEach((contato) => {
+          const li = document.createElement("li");
+          li.textContent = contato;
+          lista.appendChild(li);
+        });
+      }
+
+      function adicionarContato() {
+        const inputNome = document.getElementById("nome").value.trim();
+        const inputTelefone = document.getElementById("telefone").value.trim();
+        const contato = {
+          nome: inputNome.value,
+          telefone: inputTelefone.value,
+        };
+        contatos.unshift(contato);
+        atualizarLista();
+        document.getElementById("nome").value = "";
+        document.getElementById("telefone").value = "";
+      }
+    </script>
+  </body>
+</html>

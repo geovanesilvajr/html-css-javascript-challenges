@@ -127,7 +127,7 @@
         lista.innerHTML = "";
         contatos.forEach((contato) => {
           const li = document.createElement("li");
-          li.textContent = contato;
+          li.textContent = `${contato.nome} - ${contato.telefone}`;
           lista.appendChild(li);
         });
       }
@@ -135,9 +135,14 @@
       function adicionarContato() {
         const inputNome = document.getElementById("nome").value.trim();
         const inputTelefone = document.getElementById("telefone").value.trim();
+
+        if (inputNome === "" || inputTelefone === "") {
+          return alert("Digite um Nome e Telefone Válidos.");
+        }
+
         const contato = {
-          nome: inputNome.value,
-          telefone: inputTelefone.value,
+          nome: inputNome,
+          telefone: inputTelefone,
         };
         contatos.unshift(contato);
         atualizarLista();

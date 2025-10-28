@@ -50,4 +50,4 @@ O objetivo é praticar **JS + lógica de programação** com foco em **desenvolv
 - [Objeto dentro de Objeto (Aninhado)](./day-39-objeto-aninhado/index.html) — Cria um objeto que contenha outro objeto dentro dele (por exemplo, um carro com informações do proprietário).
 - [Array de Objetos](./day-40-array-objetos/index.html) — Cria um app que exiba uma lista de usuários a partir de um array de objetos, mostrando nome e idade na tela.
 - [Dia 41: Atualizar valores de objetos](./day-41-atualizar-objeto/index.html) — Dia 41: Atualizar valores de objetos.
-- [Agenda de Contatos](./day-41-agen4da-contatos/index.html) — Criação de uma pequena agenda que permite adicionar contatos (nome e telefone) em uma lista dinâmica, utilizando **arrays de objetos** e manipulação do **DOM** com JavaScript.
+- [Agenda de Contatos](./day-41-agenda-contatos/index.html) — Criação de uma pequena agenda que permite adicionar contatos (nome e telefone) em uma lista dinâmica, utilizando **arrays de objetos** e manipulação do **DOM** com JavaScript.

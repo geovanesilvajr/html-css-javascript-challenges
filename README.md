@@ -53,3 +53,4 @@ O objetivo é praticar **JS + lógica de programação** com foco em **desenvolv
 - [Agenda de Contatos](./day-41-agenda-contatos/index.html) — Criação de uma pequena agenda que permite adicionar contatos (nome e telefone) em uma lista dinâmica, utilizando **arrays de objetos** e manipulação do **DOM** com JavaScript.
 - [DOM Manipulation: Alterar elemento](./day-42-Dom-Manipulation/index.html) — Cria uma mini aplicação que altera o texto de um elemento HTML ao clicar em um botão. O objetivo é praticar manipulação do DOM com getElementById() e textContent.
 - [DOM Manipulation - Alterar estilo](./day-44-alterar-estilo/index.html) — cria um mini app que muda o estilo de um texto (cor, tamanho ou fundo) ao clicar em um botão.
+- [Alterar imagem dinamicamente](./day-45-alterar-img/index.html) — Mini app que altera a imagem de um produto ao clicar em um botão, utilizando manipulação do DOM com JavaScript.

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dia 46 - Mostrar/Ocultar Elementos</title>
+    <style>
+      body {
+        font-family: system-ui, sans-serif;
+        background: #f7f7f7;
+        color: #222;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+      }
+
+      h1 {
+        color: #333;
+        margin-bottom: 1rem;
+      }
+
+      button {
+        background-color: #2563eb;
+        color: white;
+        border: none;
+        padding: 10px 16px;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 1rem;
+        transition: background 0.3s ease;
+      }
+
+      button:hover {
+        background-color: #1e40af;
+      }
+
+      p {
+        margin-top: 1.5rem;
+        padding: 10px 20px;
+        background-color: #e0e7ff;
+        border-radius: 8px;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>👀 Mostrar/Ocultar Elemento</h1>
+      <button onclick="toggleTexto()">Mostrar/Ocultar</button>
+      <p id="mensagem">Este é um texto que pode ser mostrado ou ocultado.</p>
+    </main>
+
+    <script>
+      // 👉 Escreva seu código JavaScript aqui
+
+      /*
+        🧠 HISTÓRIAS DE USUÁRIO (estilo freeCodeCamp)
+
+        1️⃣ Ao clicar no botão, o texto deve ser alternado entre visível e oculto.
+        2️⃣ Use manipulação do DOM para alterar a propriedade 'display' do elemento <p>.
+        3️⃣ Dica: você pode usar uma condicional (if/else) para alternar entre "none" e "block".
+        4️⃣ O texto inicial deve estar visível.
+      */
+
+      function toggleTexto() {
+        const mensagem = document.getElementById("mensagem");
+
+        const block = (mensagem.style.display = "block");
+        const none = (mensagem.style.display = "none");
+
+        switch (block) {
+          case none:
+            break;
+          case block:
+            break;
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -67,14 +67,10 @@
       function toggleTexto() {
         const mensagem = document.getElementById("mensagem");
 
-        const block = (mensagem.style.display = "block");
-        const none = (mensagem.style.display = "none");
-
-        switch (block) {
-          case none:
-            break;
-          case block:
-            break;
+        if (mensagem.style.display === "block") {
+          return (mensagem.style.display = "none");
+        } else {
+          mensagem.style.display = "block";
         }
       }
     </script>

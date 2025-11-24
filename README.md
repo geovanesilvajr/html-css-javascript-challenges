@@ -55,3 +55,4 @@ O objetivo é praticar **JS + lógica de programação** com foco em **desenvolv
 - [DOM Manipulation - Alterar estilo](./day-44-alterar-estilo/index.html) — cria um mini app que muda o estilo de um texto (cor, tamanho ou fundo) ao clicar em um botão.
 - [Alterar imagem dinamicamente](./day-45-alterar-img/index.html) — Mini app que altera a imagem de um produto ao clicar em um botão, utilizando manipulação do DOM com JavaScript.
 - [Mostrar/Ocultar elementos](./day-46-mostrar-ocultar/index.html) — Cria um pequeno app que permite mostrar ou ocultar um texto ao clicar em um botão, utilizando manipulação do DOM para alterar a visibilidade do elemento.
+- [Dia 47](./day-47-dom-manipulation/index.html) — descrição.
